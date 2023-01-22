@@ -1,0 +1,272 @@
+* {
+  margin: 0px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  /* padding: 0px; */
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #5d5fce, #8e4091);
+  box-sizing: border-box;
+}
+.mainheader {
+  /* border: 1px solid; */
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.btn {
+  background: transparent;
+  border: 0px solid;
+  width: 300px;
+  min-height: 90px;
+  margin-top: 10px;
+}
+.baricon {
+  color: white;
+  font-size: 1.5rem;
+}
+.weatherLogo {
+  margin-right: 12rem;
+  /* border: 1px solid; */
+}
+.weatherdetails {
+  /* border: 1px solid; */
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: search 1s ease 0.3s 1 forwards;
+}
+.datetimetext {
+  margin: 1.5em 0px;
+  font-size: 1.1rem;
+  /* font-weight: ; */
+
+  /* border: 1px solid; */
+}
+.citytext {
+  margin: 1.5em 0px;
+  /* border: 1px solid; */
+  /* width: 90%; */
+}
+.addfavtext {
+  margin: 1.5em 00px;
+  color: #ffa222;
+  font-size: 0.9rem;
+  /* border: 1px solid red; */
+  /* width: 90%; */
+}
+.climateimg {
+  /* border: 1px solid; */
+  height: 100px;
+  width: 100px;
+  margin-top: 6rem;
+}
+.climatetext {
+  text-transform: capitalize;
+}
+.temperaturetext {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid; */
+}
+.favbtn {
+  border: none;
+  background: transparent;
+  size: 20px;
+}
+.topnav {
+  display: none;
+}
+.searchdiv {
+  border: 1rem solid;
+  border-width: 0.01em;
+  /* border-style: solid; */
+
+  display: none;
+  width: 500px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  padding: 0px 12px;
+  position: relative;
+}
+.cities-div-web {
+  position: absolute;
+  width: 95%;
+  border: 1px solid;
+  border-radius: 7px;
+  text-align: center;
+  top: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  opacity: 0;
+  animation: search 0.5s ease forwards;
+}
+.cities-div-web p {
+  width: 95%;
+  border-bottom: 1px solid rgb(252, 252, 252);
+  margin: 0px auto;
+  font-size: 1.4rem;
+  padding: 5px;
+}
+.searchtextinput {
+  background: transparent;
+  border: none;
+  color: white;
+  /* border: 1px solid; */
+  width: 100%;
+}
+.searchtextinput:focus {
+  outline: none;
+}
+.searchtextinput::placeholder {
+  color: aliceblue;
+  font-size: 1rem;
+  padding-left: 2px;
+}
+.topnav {
+  /* border: 1px solid; */
+  border-bottom: 1px solid rgba(225, 225, 255, 0.6);
+  padding: 0px 50px;
+  /* padding-bottom: 2.4px; */
+  /* box-sizing: border-box; */
+  /* height: 2.8vh; */
+  position: relative;
+}
+.datetime {
+  color: white;
+  position: absolute;
+  right: 100px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  /* border: 1px solid; */
+}
+.datetime span {
+  text-transform: uppercase;
+  /* border: 1px solid; */
+  font-size: 1.1rem;
+  margin-left: 6px;
+}
+.tablink {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  /* border: 1px solid; */
+}
+.drawer {
+  /* border: 1px solid; */
+  height: 100vh;
+  width: 70vw;
+  position: absolute;
+  display: none;
+  animation-name: drawer;
+  /* animation-name: drawerclose; */
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  background-color: #8e4091;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.drawer-text {
+  color: white;
+  /* border: 1px solid; */
+  margin: 50px 0px;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+
+/* ==================================================================== */
+
+/* @media screen and (min-width: 1000px) {
+  .datetimetext {
+    display: contents;
+  }
+  .mainheader {
+    border: 1px solid;
+    padding: 0px;
+  }
+} */
+@keyframes drawer {
+  0% {
+    transform: translateX(-100px);
+  }
+}
+@media screen and (min-width: 750px) {
+  .topnav {
+    display: block;
+  }
+  .baricon {
+    display: none;
+  }
+  .searchlogo {
+    display: none;
+  }
+  .searchdiv {
+    display: flex;
+  }
+  .drawer {
+    display: none;
+  }
+  .weatherdetails {
+    /* border: 1px solid; */
+    align-items: flex-start;
+    padding: 0px 50px;
+  }
+  .climateimg {
+    /* border: 1px solid; */
+    align-self: center;
+  }
+  .temperaturetext {
+    margin-top: 100px;
+    align-self: center;
+  }
+  .datetimetext {
+    display: none;
+  }
+  .datetime {
+    right: 30px;
+
+    /* border: 1px solid; */
+  }
+}
+@media screen and (min-width: 1000px) {
+  .main {
+    padding: 0px 100px;
+  }
+  .datetime {
+    right: 0px;
+  }
+  .datetimetext {
+    display: contents;
+  }
+  .mainheader {
+    /* border: 1px solid; */
+    padding: 0px;
+  }
+  .datetimetext {
+    display: none;
+  }
+  .drawer {
+    display: none;
+  }
+  .mainheader {
+    /* border: 1px solid red; */
+  }
+}

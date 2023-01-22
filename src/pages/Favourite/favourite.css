@@ -1,0 +1,27 @@
+.favcontainer {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  justify-content: center;
+  /* align-items: center; */
+}
+.no-fav-div {
+  /* border: 1px solid; */
+  align-self: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+.web-view {
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .mobile-view {
+    display: none;
+    /* border: 1px solid black; */
+  }
+  .web-view {
+    display: block;
+    /* border: 1px solid black; */
+  }
+}

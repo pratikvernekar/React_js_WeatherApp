@@ -1,0 +1,70 @@
+.card-container {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  flex-direction: column;
+  overflow: scroll;
+}
+.card-container-web {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.card {
+  /* border: 1px solid; */
+  height: 100px;
+  width: 90%;
+  margin: 1px 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.top-text-div {
+  /* border: 1px solid; */
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  font-size: 8rem;
+
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+.top-text-div p {
+  font-size: 1rem;
+}
+.card-city-text {
+  color: #fad05b;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+.card-temp-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.card-climate-text {
+  font-size: 1rem;
+}
+.card-innertext-div {
+  /* border: 1px solid; */
+  width: 60%;
+}
+.card-climate-img {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid; */
+}
+.web {
+  /* border: 1px solid; */
+  display: flex;
+  width: 300px;
+  height: 80px;
+  justify-content: space-around;
+  align-items: center;
+}

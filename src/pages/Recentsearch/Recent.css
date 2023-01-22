@@ -1,0 +1,13 @@
+.favcontainer {
+  opacity: 0;
+  animation: search 1s ease 0.3s 1 forwards;
+  /* border: 1px solid; */
+}
+@keyframes search {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}

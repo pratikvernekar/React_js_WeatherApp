@@ -1,0 +1,35 @@
+.search-main {
+  /* border: 0.1px solid; */
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(106, 132, 147); */
+  height: 100vh;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  animation: search 0.3s ease 0.5s 1 forwards;
+}
+.cities {
+  border: 1px solid;
+  height: 90vh;
+  padding: 10px;
+}
+.city-text {
+  border: 1px solid;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 93%;
+  opacity: 0;
+  animation: search 1s ease  1 forwards;
+}
+
+@keyframes search {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
